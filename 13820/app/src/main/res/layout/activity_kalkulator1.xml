@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kalkulator1">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:text="CALCULATOR"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Angka 1 : "
+            android:textSize="20dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/angka1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Angka 2 : "
+            android:textSize="20dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/angka2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/tambah"
+            android:text="tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="5dp"
+            android:layout_height="8dp"
+            />
+
+        <Button
+            android:id="@+id/kali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kali" />
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="5dp"
+            android:layout_height="8dp"
+            />
+
+        <Button
+            android:id="@+id/kurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kurang" />
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="5dp"
+            android:layout_height="8dp"
+            />
+
+        <Button
+            android:id="@+id/bagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bagi" />
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="5dp"
+            android:layout_height="8dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Hasil Operasi : "
+            android:textSize="20dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/hasiloperasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
